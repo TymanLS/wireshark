@@ -35,6 +35,8 @@
 
 /* "SSH" prefixes are for version 2, whereas "SSH1" is for version 1 */
 
+// Tyman was here
+
 #include "config.h"
 
 #include <epan/packet.h>
@@ -93,12 +95,13 @@ struct ssh_peer_data {
     gint    length_is_plaintext;
 };
 
+/*
 struct ssh_flow_data {
     guint   version;
 
     gchar*  kex;
     int   (*kex_specific_dissector)(guint8 msg_code, tvbuff_t *tvb, packet_info *pinfo, int offset, proto_tree *tree);
-
+*/
     /* [0] is client's, [1] is server's */
 #define CLIENT_PEER_DATA 0
 #define SERVER_PEER_DATA 1
